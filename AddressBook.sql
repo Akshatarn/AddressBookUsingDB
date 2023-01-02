@@ -22,3 +22,7 @@ SELECT *FROM AddressBookTable;
 
 --Editing table values using person Name---
 Update AddressBookTable Set PhoneNo=954899 Where FirstName='Suhas'
+
+---Deleting Contact using personName---
+Delete from AddressBookTable Where FirstName='Suhas'
+SELECT *FROM AddressBookTable;
