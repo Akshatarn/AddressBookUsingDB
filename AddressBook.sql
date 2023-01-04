@@ -24,5 +24,18 @@ SELECT *FROM AddressBookTable;
 Update AddressBookTable Set PhoneNo=954899 Where FirstName='Suhas'
 
 ---Deleting Contact using personName---
+Delete from AddressBookTable Where FirstName='Shreya'
+SELECT *FROM AddressBookTable;
+
+
+INSERT INTO AddressBookTable VALUES('Shreya','Shetty','Bangalore','Bangalore','Karnataka',158745,1222222222,'shreya@gmail.com'),
+('Suhas','Kulkarni','Pune','Pune','Maharashtra',123645,1254789654,'sunil@gmail.com');
+SELECT *FROM AddressBookTable;
+Delete from AddressBookTable Where FirstName='Shreya'
+SELECT *FROM AddressBookTable;
 Delete from AddressBookTable Where FirstName='Suhas'
 SELECT *FROM AddressBookTable;
+
+---Get Person Using City Or State
+SELECT *FROM AddressBookTable WHERE City='Pune';
+SELECT *FROM AddressBookTable WHERE City='Hubli';
