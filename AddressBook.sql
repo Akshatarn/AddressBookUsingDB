@@ -43,3 +43,7 @@ SELECT *FROM AddressBookTable WHERE City='Hubli';
 ---Get size of AddressBook---
 
 SELECT COUNT(*) AS SIZE FROM AddressBookTable WHERE Address='Pune';
+
+---Alphabetically Ordering the table values---
+
+SELECT *FROM AddressBookTable ORDER BY FirstName;
