@@ -39,3 +39,7 @@ SELECT *FROM AddressBookTable;
 ---Get Person Using City Or State
 SELECT *FROM AddressBookTable WHERE City='Pune';
 SELECT *FROM AddressBookTable WHERE City='Hubli';
+
+---Get size of AddressBook---
+
+SELECT COUNT(*) AS SIZE FROM AddressBookTable WHERE Address='Pune';
