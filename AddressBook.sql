@@ -47,3 +47,14 @@ SELECT COUNT(*) AS SIZE FROM AddressBookTable WHERE Address='Pune';
 ---Alphabetically Ordering the table values---
 
 SELECT *FROM AddressBookTable ORDER BY FirstName;
+
+---Indentify AddressBookTable by Type and Name---
+ALTER TABLE AddressBookTable ADD AddressBookType VARCHAR(100),AddressBookName VARCHAR(100)
+SELECT *FROM AddressBookTable
+UPDATE AddressBookTable SET AddressBookType='Family' WHERE FirstName='Shreya'
+UPDATE AddressBookTable SET AddressBookType='Friend' WHERE FirstName='Suhas'
+UPDATE AddressBookTable SET AddressBookType='Family' WHERE FirstName='Akshata'
+SELECT *FROM AddressBookTable
+UPDATE AddressBookTable SET AddressBookName='Family-Circle' WHERE AddressBookType='Family'
+UPDATE AddressBookTable SET AddressBookName='Friend-Circle' WHERE AddressBookType='Friend'
+SELECT *FROM AddressBookTable
